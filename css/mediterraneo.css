@@ -57,3 +57,12 @@
     text-align: center;
     padding: 10px 0;
   }
+
+  #mediterraneo3d canvas {
+    display: flex;
+    width: 100% !important;
+    height: 0% !important;
+    border-radius: 150px;
+    padding: 100px;
+    cursor: grab;
+  }
