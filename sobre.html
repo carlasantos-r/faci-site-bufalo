@@ -51,14 +51,22 @@
     <section id="contato" class="section">
         <div class="container">
             <h2>Contato</h2>
-            <p>Se você tiver alguma dúvida, sugestão ou comentário, ficaremos felizes em ouvir de você. Acesse nossa seção de contato para nos enviar uma mensagem. Estamos ansiosos para compartilhar nosso conhecimento com você e esperamos que este site seja uma fonte valiosa de informação para todos que têm interesse nos búfalos do Pará.</p>
-            <p>Agradecemos sua visita e esperamos que aproveite seu tempo conosco!</p>
+            <p>Se você tiver alguma dúvida, sugestão ou comentário, ficaremos felizes em ouvir de você. Por favor, preencha o formulário abaixo:</p>
+            <form action="enviar_email.php" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Blog sobre Búfalos. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Blog sobre Búfalos. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
