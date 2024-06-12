@@ -18,7 +18,6 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 document.getElementById("carabao3d").appendChild(renderer.domElement);
 
-
 // controles
 
 controls = new OrbitControls(camera, renderer.domElement);
@@ -42,6 +41,7 @@ materialArray.push(new THREE.MeshBasicMaterial({ map: texture_rt }));
 materialArray.push(new THREE.MeshBasicMaterial({ map: texture_lf }));
 
 // loop de inversão
+
 for (let i = 0; i < 6; i++)
   materialArray[i].side = THREE.BackSide;
 
@@ -50,7 +50,6 @@ let skybox = new THREE.Mesh(skyboxGeo, materialArray);
 scene.add(skybox);
 
 //3D
-
 const loader = new GLTFLoader();
 loader.load(
   `models/dino/carabao.glb`,
@@ -105,5 +104,4 @@ function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }
-
 animate();
